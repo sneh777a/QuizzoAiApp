@@ -1,0 +1,25 @@
+runtime: nodejs20
+
+instance_class: F1
+
+env_variables:
+  NODE_ENV: "production"
+  MONGODB_URI: "mongodb+srv://tirthomondal2002:JrFHMN7pibnLij6k@cluster0.7ahxbmj.mongodb.net/quiz"
+  JWT_SECRET: "your_jwt_secret_key_here"
+  JWT_EXPIRE: "7d"
+  JWT_REFRESH_SECRET: "your_refresh_secret_key_here"
+  JWT_REFRESH_EXPIRE: "30d"
+  FRONTEND_URL: "https://quizo-frontend.onrender.com"
+  EMAIL_SERVICE: "gmail"
+  EMAIL_USERNAME: "your_email@gmail.com"
+  EMAIL_PASSWORD: "your_app_password_here"
+  EMAIL_FROM: "your_email@gmail.com"
+  GEMINI_API_KEY: "AIzaSyDkzv2pa4kIzodc0IRFvdPPWCuiqUGJQU4"
+
+automatic_scaling:
+  target_cpu_utilization: 0.65
+  min_instances: 0
+  max_instances: 1
+
+inbound_services:
+  - warmup
