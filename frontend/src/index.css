@@ -1,0 +1,116 @@
+/* Tailwind CSS import */
+@import "tailwindcss";
+/* Import our custom theme */
+@import "./theme.css";
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: var(--color-text-primary-light);
+  background-color: var(--color-bg-light);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.dark {
+  color: var(--color-text-primary-dark);
+  background-color: var(--color-bg-dark);
+}
+
+a {
+  font-weight: 500;
+  color: var(--color-primary-600);
+  text-decoration: inherit;
+}
+a:hover {
+  color: var(--color-primary-700);
+}
+.dark a {
+  color: var(--color-primary-500);
+}
+.dark a:hover {
+  color: var(--color-primary-400);
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--color-primary-600);
+  color: white;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+button:hover {
+  border-color: var(--color-primary-500);
+  background-color: var(--color-primary-700);
+}
+.dark button {
+  background-color: var(--color-primary-500);
+}
+.dark button:hover {
+  background-color: var(--color-primary-400);
+  border-color: var(--color-primary-300);
+}
+button:focus,
+button:focus-visible {
+  outline: 3px solid var(--color-primary-300);
+  outline-offset: 2px;
+}
+
+/* Apply theme transition to all elements */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Custom scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg-light);
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: var(--color-bg-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary-200);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary-300);
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: var(--color-primary-700);
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary-600);
+}

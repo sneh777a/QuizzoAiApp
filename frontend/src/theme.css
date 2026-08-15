@@ -1,0 +1,178 @@
+/* Modern Color Scheme for Quizo App */
+:root {
+  /* Light Mode Colors */
+  --color-primary-50: #f0f7ff;
+  --color-primary-100: #e0f2fe;
+  --color-primary-200: #bae6fd;
+  --color-primary-300: #7dd3fc;
+  --color-primary-400: #38bdf8;
+  --color-primary-500: #0ea5e9;
+  --color-primary-600: #0284c7;
+  --color-primary-700: #0369a1;
+  --color-primary-800: #075985;
+  --color-primary-900: #0c4a6e;
+  
+  /* Neutral Colors - Light Mode */
+  --color-bg-light: #ffffff;
+  --color-card-light: #ffffff;
+  --color-text-primary-light: #111827;
+  --color-text-secondary-light: #4b5563;
+  --color-border-light: #e5e7eb;
+  --color-input-light: #f9fafb;
+  
+  /* Accent Colors - Light Mode */
+  --color-accent-light: #8b5cf6;
+  --color-accent-hover-light: #7c3aed;
+  --color-success-light: #10b981;
+  --color-warning-light: #f59e0b;
+  --color-error-light: #ef4444;
+}
+
+/* Dark Mode Colors */
+.dark {
+  --color-primary-50: #082f49;
+  --color-primary-100: #0c4a6e;
+  --color-primary-200: #075985;
+  --color-primary-300: #0369a1;
+  --color-primary-400: #0284c7;
+  --color-primary-500: #0ea5e9;
+  --color-primary-600: #38bdf8;
+  --color-primary-700: #7dd3fc;
+  --color-primary-800: #bae6fd;
+  --color-primary-900: #e0f2fe;
+  
+  /* Neutral Colors - Dark Mode */
+  --color-bg-dark: #111827;
+  --color-card-dark: #1f2937;
+  --color-text-primary-dark: #f9fafb;
+  --color-text-secondary-dark: #d1d5db;
+  --color-border-dark: #374151;
+  --color-input-dark: #374151;
+  
+  /* Accent Colors - Dark Mode */
+  --color-accent-dark: #8b5cf6;
+  --color-accent-hover-dark: #a78bfa;
+  --color-success-dark: #34d399;
+  --color-warning-dark: #fbbf24;
+  --color-error-dark: #f87171;
+}
+
+/* Utility classes for Tailwind */
+.bg-app {
+  background-color: var(--color-bg-light);
+}
+.dark .bg-app {
+  background-color: var(--color-bg-dark);
+}
+
+.bg-card {
+  background-color: var(--color-card-light);
+}
+.dark .bg-card {
+  background-color: var(--color-card-dark);
+}
+
+.text-primary {
+  color: var(--color-text-primary-light);
+}
+.dark .text-primary {
+  color: var(--color-text-primary-dark);
+}
+
+.text-secondary {
+  color: var(--color-text-secondary-light);
+}
+.dark .text-secondary {
+  color: var(--color-text-secondary-dark);
+}
+
+.border-app {
+  border-color: var(--color-border-light);
+}
+.dark .border-app {
+  border-color: var(--color-border-dark);
+}
+
+.bg-input {
+  background-color: var(--color-input-light);
+}
+.dark .bg-input {
+  background-color: var(--color-input-dark);
+}
+
+/* Button styles */
+.btn-primary {
+  background-color: var(--color-primary-600);
+  color: white;
+}
+.btn-primary:hover {
+  background-color: var(--color-primary-700);
+}
+.dark .btn-primary {
+  background-color: var(--color-primary-500);
+}
+.dark .btn-primary:hover {
+  background-color: var(--color-primary-400);
+}
+
+.btn-accent {
+  background-color: var(--color-accent-light);
+  color: white;
+}
+.btn-accent:hover {
+  background-color: var(--color-accent-hover-light);
+}
+.dark .btn-accent {
+  background-color: var(--color-accent-dark);
+}
+.dark .btn-accent:hover {
+  background-color: var(--color-accent-hover-dark);
+}
+
+/* Modern button styles */
+.modern-button {
+  background-color: var(--color-primary-600);
+  color: white;
+  border-radius: 0.375rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+.modern-button:hover {
+  background-color: var(--color-primary-700);
+}
+.dark .modern-button {
+  background-color: var(--color-primary-500);
+  color: white;
+}
+.dark .modern-button:hover {
+  background-color: var(--color-primary-400);
+}
+
+.modern-button-secondary {
+  background-color: transparent;
+  color: var(--color-primary-600);
+  border: 1px solid var(--color-primary-600);
+  border-radius: 0.375rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+.modern-button-secondary:hover {
+  background-color: var(--color-primary-50);
+}
+.dark .modern-button-secondary {
+  color: var(--color-primary-400);
+  border-color: var(--color-primary-400);
+}
+.dark .modern-button-secondary:hover {
+  background-color: var(--color-primary-900);
+}
+
+/* Transition for smooth theme switching */
+.theme-transition {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
