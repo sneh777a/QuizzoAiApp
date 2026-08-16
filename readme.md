@@ -18,11 +18,11 @@ A real-time multiplayer quiz application built with the MERN stack and powered b
 
 
 
-\- \*\*Frontend\*\*: \[https://quizzo-ai-app-ivory.vercel.app] (https://quizzo-ai-app-ivory.vercel.app)
+\- \*\*Frontend\*\*: \[https://quizzo-ai-app-ivory.vercel.app](https://quizzo-ai-app-ivory.vercel.app)
 
-\- \*\*Backend\*\*: \[https://quizzoaiapp.onrender.com] (https://quizzoaiapp.onrender.com)
+\- \*\*Backend\*\*: \[https://quizzoaiapp.onrender.com](https://quizzoaiapp.onrender.com)
 
-\- \*\*GitHub\*\*: \[https://github.com/sneh777a/QuizzoAiApp] (https://github.com/sneh777a/QuizzoAiApp)
+\- \*\*GitHub\*\*: \[https://github.com/sneh777a/QuizzoAiApp](https://github.com/sneh777a/QuizzoAiApp)
 
 
 
